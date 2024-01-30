@@ -20,5 +20,7 @@ pipelines:
            deployment:
             tasks:
              - exec:
-                 command: 'echo "name is ${name}"'
+                 command: echo
+                 arguments:
+                   - "my name is $name"
                 
