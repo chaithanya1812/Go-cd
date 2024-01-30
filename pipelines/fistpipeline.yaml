@@ -18,4 +18,10 @@ pipelines:
             tasks:
              - exec:
                  command: ls
+           deployment1:
+             environment_variables:
+              DEPLOYMENT: testing
+              name: chaithnaya
+             tasks: 
+               - script: ./name.sh 
                  
