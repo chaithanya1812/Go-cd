@@ -26,7 +26,5 @@ pipelines:
               environment_variables:
                 name: chaithnay
               - exec:
-                  command: echo
-                  arguments:
-                     - "my Name iisisiisis -${name}"
+                  command: [echo "my name is $name"]
                  
