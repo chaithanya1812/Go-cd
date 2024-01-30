@@ -1,0 +1,21 @@
+#ci.gocd.yaml
+format_version: 9
+pipelines:
+  mypipe1:
+    group: defaultGroup
+    display_order: -1
+    label_template: "${mygit[:8]}"
+    lock_behavior: none
+    materials:
+      mygit:
+        git: https://github.com/chaithanya1812/Go-cd.git
+        branch: FIRST
+    stages: # list of stages in order
+      - build: # name of stage
+          clean_workspace: true
+          jobs:
+           deployment:
+            tasks:
+             - exec:
+                 command: ls
+                 
