@@ -20,11 +20,6 @@ pipelines:
            deployment:
             tasks:
              - exec:
-                 command: ls
-           deployment1:
-             tasks: 
-              environment_variables:
-                name: chaithnay
-              - exec:
-                  command: [echo "my name is $name"]
-                 
+                 command: git
+                 arguments:
+                  - --version
