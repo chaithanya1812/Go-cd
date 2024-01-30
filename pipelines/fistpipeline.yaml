@@ -23,6 +23,8 @@ pipelines:
                  command: ls
            deployment1:
              tasks: 
+              environment_variables:
+                name: chaithnay
               - exec:
                   command: echo
                   arguments:
