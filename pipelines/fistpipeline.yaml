@@ -20,6 +20,6 @@ pipelines:
            deployment:
             tasks:
              - exec:
-                 command: git
+                 command: bash 
                  arguments:
-                  - --version
+                  - 'echo "name is ${name}"'
