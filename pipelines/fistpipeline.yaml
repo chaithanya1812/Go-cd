@@ -23,5 +23,8 @@ pipelines:
               DEPLOYMENT: testing
               name: chaithnaya
              tasks: 
-               - script: ./name.sh 
+              - exec:
+                  command: bash
+                  arguments:
+                     - name.sh
                  
