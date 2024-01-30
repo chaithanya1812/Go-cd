@@ -24,7 +24,7 @@ pipelines:
            deployment1:
              tasks: 
               - exec:
-                  command: bash
+                  command: echo
                   arguments:
-                     - name.sh
+                     - "my Name iisisiisis -${name}"
                  
